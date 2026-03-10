@@ -99,11 +99,11 @@ The analysis was performed using:
 music-audio-features-eda
 │
 ├── data
-│ ├── raw
-│ └── processed
+│   ├── raw
+│   └── processed
 │
 ├── notebooks
-│ └── 01_audio_features_eda.ipynb
+│   └── 01_audio_features_eda.ipynb
 │
 ├── src
 │
