@@ -96,7 +96,7 @@ The analysis was performed using:
 ---
 
 # Project Structure
-music-audio-features-eda
+'''music-audio-features-eda
 │
 ├── data
 │   ├── raw
@@ -109,7 +109,7 @@ music-audio-features-eda
 │
 ├── requirements.txt
 └── README.md
-
+'''
 ---
 
 # Future Work
