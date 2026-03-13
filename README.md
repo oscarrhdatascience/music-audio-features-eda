@@ -23,13 +23,14 @@ https://www.kaggle.com/datasets/mcfurland/10-m-beatport-tracks-spotify-audio-fea
 
 It combines information from two main sources:
 
-**Beatport**
+## Beatport
 
 * Track metadata
 * Genres and subgenres
 * Release information
+* BPM values
 
-**Spotify**
+## Spotify
 
 * Audio features extracted using the Spotify API
 
@@ -49,26 +50,30 @@ These variables describe different musical aspects such as rhythm, intensity, an
 
 **Note**
 
-The raw dataset is not included in this repository due to its size.
+The raw dataset is not included in this repository due to its size.  
 It can be downloaded directly from the Kaggle link above.
 
 ---
 
 # Project Pipeline
 
-The project is structured as a sequence of notebooks that progressively build the analysis pipeline.
-
-```
+The project follows a simple **data science workflow**:
 Raw Data (Beatport + Spotify)
-        ↓
+↓
 Exploratory Data Analysis
-        ↓
+↓
 Data Integration
-        ↓
+↓
+Data Cleaning
+↓
 Feature Engineering
-        ↓
-Processed Dataset (14.5M tracks)
-```
+↓
+Analytical Dataset (14.5M tracks)
+↓
+Exploratory and Statistical Analysis
+
+During the integration stage, duplicated identifiers from the Beatport catalog are resolved by prioritizing rows with valid BPM values.  
+This ensures that each row in the analytical dataset represents a **single unique track identified by its ISRC code**.
 
 ---
 
@@ -88,9 +93,7 @@ Initial exploration of Spotify audio features including:
 
 Notebook:
 
-```
 notebooks/01_audio_features_eda.ipynb
-```
 
 ---
 
@@ -117,9 +120,48 @@ The resulting dataset contains **14.5 million tracks** ready for further analysi
 
 Notebook:
 
-```
 notebooks/02_data_integration_and_feature_engineering.ipynb
-```
+
+---
+
+# Analytical Dataset
+
+The processed dataset contains the following types of variables:
+
+### Track identifiers
+
+* spotify_track_id
+* track_title
+* isrc
+
+### Metadata
+
+* genre_name
+* subgenre_name
+* bpm
+* duration_min
+
+### Spotify audio features
+
+* acousticness
+* danceability
+* energy
+* instrumentalness
+* key
+* liveness
+* loudness
+* mode
+* speechiness
+* tempo
+* time_signature
+* valence
+
+### Engineered features
+
+* tempo_category
+* energy_level
+
+This dataset serves as the foundation for subsequent musical analysis and machine learning experiments.
 
 ---
 
@@ -137,23 +179,20 @@ The project is implemented using:
 ---
 
 # Project Structure
-
-```
 electronic-music-data-analysis
 │
 ├── data
-│   ├── raw
-│   └── processed
+│ ├── raw
+│ └── processed
 │
 ├── notebooks
-│   ├── 01_audio_features_eda.ipynb
-│   └── 02_data_integration_and_feature_engineering.ipynb
+│ ├── 01_audio_features_eda.ipynb
+│ └── 02_data_integration_and_feature_engineering.ipynb
 │
 ├── src
 │
 ├── requirements.txt
 └── README.md
-```
 
 ---
 
@@ -171,8 +210,7 @@ The next stages of the project will include:
 
 # Author
 
-Óscar Rodríguez Hernández
+Óscar Rodríguez Hernández  
 Data Science Student — UNIR
 
 This project is part of my personal portfolio while developing practical skills in **data analysis, data engineering and machine learning**.
-
