@@ -58,19 +58,14 @@ It can be downloaded directly from the Kaggle link above.
 # Project Pipeline
 
 The project follows a simple **data science workflow**:
-Raw Data (Beatport + Spotify)
-↓
-Exploratory Data Analysis
-↓
-Data Integration
-↓
-Data Cleaning
-↓
-Feature Engineering
-↓
-Analytical Dataset (14.5M tracks)
-↓
-Exploratory and Statistical Analysis
+
+1. Raw Data (Beatport + Spotify)
+2. Exploratory Data Analysis
+3. Data Integration
+4. Data Cleaning
+5. Feature Engineering
+6. Analytical Dataset (14.5M tracks)
+7. Exploratory and Statistical Analysis
 
 During the integration stage, duplicated identifiers from the Beatport catalog are resolved by prioritizing rows with valid BPM values.  
 This ensures that each row in the analytical dataset represents a **single unique track identified by its ISRC code**.
@@ -179,20 +174,23 @@ The project is implemented using:
 ---
 
 # Project Structure
+
+```
 electronic-music-data-analysis
 │
 ├── data
-│ ├── raw
-│ └── processed
+│   ├── raw
+│   └── processed
 │
 ├── notebooks
-│ ├── 01_audio_features_eda.ipynb
-│ └── 02_data_integration_and_feature_engineering.ipynb
+│   ├── 01_audio_features_eda.ipynb
+│   └── 02_data_integration_and_feature_engineering.ipynb
 │
 ├── src
 │
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
