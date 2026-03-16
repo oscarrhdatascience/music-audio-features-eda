@@ -88,7 +88,7 @@ Initial exploration of Spotify audio features including:
 
 Notebook:
 
-notebooks/01_audio_features_eda.ipynb
+https://github.com/oscarrhdatascience/electronic-music-data-analysis/blob/main/notebooks/01_audio_features_eda.ipynb
 
 ---
 
@@ -115,7 +115,7 @@ The resulting dataset contains **14.5 million tracks** ready for further analysi
 
 Notebook:
 
-notebooks/02_data_integration_and_feature_engineering.ipynb
+https://github.com/oscarrhdatascience/electronic-music-data-analysis/blob/main/notebooks/02_data_integration_and_feature_engineering.ipynb
 
 ---
 
@@ -135,7 +135,7 @@ These analyses provide insight into how musical characteristics vary across elec
 
 Notebook:
 
-notebooks/03_genre_audio_analysis.ipynb
+https://github.com/oscarrhdatascience/electronic-music-data-analysis/blob/main/notebooks/03_genre_audio_analysis.ipynb
 
 ---
 
@@ -156,7 +156,7 @@ The results reveal that clusters do not strictly correspond to individual genres
 
 Notebook:
 
-notebooks/04_genre_feature_space_and_clustering.ipynb
+https://github.com/oscarrhdatascience/electronic-music-data-analysis/blob/main/notebooks/04_genre_feature_space_and_clustering.ipynb
 
 ---
 # Analytical Dataset
