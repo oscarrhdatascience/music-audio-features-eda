@@ -119,6 +119,26 @@ notebooks/02_data_integration_and_feature_engineering.ipynb
 
 ---
 
+## 03 — Genre Audio Analysis
+
+This notebook analyzes musical characteristics across electronic music genres using the integrated dataset.
+
+Main analyses include:
+
+* BPM comparison across genres
+* Energy and danceability ranking
+* Musical key distribution
+* Loudness comparison between genres
+* Correlation analysis between Spotify audio features
+
+These analyses provide insight into how musical characteristics vary across electronic music styles such as Techno, House, Trance and Drum & Bass.
+
+Notebook:
+
+notebooks/03_genre_audio_analysis.ipynb
+
+---
+
 # Analytical Dataset
 
 The processed dataset contains the following types of variables:
